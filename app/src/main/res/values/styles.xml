@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <!-- Constraint Layout Style -->
+    <style name="Layout" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding_left_layout</item>
+        <item name="android:paddingRight">@dimen/padding_right_layout</item>
+        <item name="android:paddingTop">@dimen/padding_top_layout</item>
+    </style>
+
+    <!-- Style for Label and Description of Activity -->
+    <style name="ActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding_side_label</item>
+        <item name="android:paddingRight">@dimen/padding_side_label</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!-- Song Style on Trending Page -->
+    <style name="Song" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_side_song</item>
+    </style>
+
+    <!-- List Label Style -->
+    <style name="Label" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/colorBorderButton</item>
+    </style>
+
+    <!-- Music Bar Style -->
+    <style name="MusicBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_height">@dimen/height_musicbar</item>
+    </style>
+
+    <!-- Music Control Style -->
+    <style name="MusicControl" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">@dimen/height_musiccontrol</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+    </style>
+
+</resources>

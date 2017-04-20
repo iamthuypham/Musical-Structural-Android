@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/songImage"
+        android:contentDescription="@string/imageDescription"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/play"
+        android:contentDescription="@string/imageDescription"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_play_circle_outline_black_24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="55dp"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/songTitle"
+        android:textColor="@color/colorBorderButton"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/songImage"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/songArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/songArtist"
+        android:textColor="@color/colorBorderButton"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/songTitle"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/songAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/albumName"
+        android:textColor="@color/colorBorderButton"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/songArtist"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/songPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buy"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorBorderButton"
+        android:background="@color/colorPuchase"
+        android:layout_marginEnd="5dp"
+        android:padding="5dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/songAlbum"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:background="@color/colorPrimaryDark"
+    tools:context="collectdesigns.musical_structure.TrendingActivity">
+
+    <android.support.constraint.ConstraintLayout
+        style="@style/Layout">
+
+        <TextView
+            android:id="@+id/trending_activity_label"
+            android:text="@string/trendingactivity_label"
+            style="@style/ActivityStyle"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/marginTop"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/trending_activity_description"
+            style="@style/ActivityStyle"
+            android:text="@string/trendingactivity_description"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trending_activity_label"
+            />
+
+        <TextView
+            android:id="@+id/top10Title"
+            android:text="@string/top10Label"
+            style="@style/Label"
+            app:layout_constraintTop_toBottomOf="@+id/trending_activity_description"
+            />
+        <HorizontalScrollView
+            android:id="@+id/top10List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/top10Title"
+            android:layout_marginTop="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/song"
+                    android:id="@+id/song1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <include layout="@layout/song"
+                    android:id="@+id/song2"
+                    app:layout_constraintLeft_toRightOf="@+id/song1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Song"
+                    />
+
+                <include layout="@layout/song"
+                    android:id="@+id/song3"
+                    app:layout_constraintLeft_toRightOf="@+id/song2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Song"
+                    />
+
+                <include layout="@layout/song"
+                    android:id="@+id/song4"
+                    app:layout_constraintLeft_toRightOf="@+id/song3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Song"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/artistListTitle"
+            android:text="@string/artistLabel"
+            app:layout_constraintTop_toBottomOf="@+id/top10List"
+            style="@style/Label"/>
+
+        <HorizontalScrollView
+            android:id="@+id/artistList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/artistListTitle"
+            android:layout_marginTop="5dp">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/song"
+                    android:id="@+id/song1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <include layout="@layout/song"
+                    android:id="@+id/song2"
+                    app:layout_constraintLeft_toRightOf="@+id/song1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Song"
+                    />
+
+                <include layout="@layout/song"
+                    android:id="@+id/song3"
+                    app:layout_constraintLeft_toRightOf="@+id/song2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Song"
+                    />
+
+                <include layout="@layout/song"
+                    android:id="@+id/song4"
+                    app:layout_constraintLeft_toRightOf="@+id/song3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Song"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/albumListTitle"
+            android:text="@string/albumLabel"
+            style="@style/Label"
+            app:layout_constraintTop_toBottomOf="@+id/artistList" />
+
+        <HorizontalScrollView
+            android:id="@+id/albumList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/albumListTitle"
+            android:layout_marginTop="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/song"
+                    android:id="@+id/song1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <include layout="@layout/song"
+                    android:id="@+id/song2"
+                    app:layout_constraintLeft_toRightOf="@+id/song1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Song"
+                    />
+
+                <include layout="@layout/song"
+                    android:id="@+id/song3"
+                    app:layout_constraintLeft_toRightOf="@+id/song2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Song"
+                    />
+
+                <include layout="@layout/song"
+                    android:id="@+id/song4"
+                    app:layout_constraintLeft_toRightOf="@+id/song3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Song"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+        </HorizontalScrollView>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

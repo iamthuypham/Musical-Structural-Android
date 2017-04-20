@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    tools:context="collectdesigns.musical_structure.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:contentDescription="@string/imageDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_blur" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/imageDescription"
+            android:src="@mipmap/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="1dp"
+            app:layout_constraintLeft_toRightOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/landingscreen_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/landingscreen_description"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brand"
+            />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appDescription"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorBorderButton"
+            app:layout_constraintBottom_toTopOf="@+id/guideline1"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/trending"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:text="@string/trendingNow"
+            android:textColor="@color/colorBorderButton"
+            android:background="@color/colorPrimary"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slogan"
+            android:layout_marginTop="30dp"
+            android:layout_margin="10dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

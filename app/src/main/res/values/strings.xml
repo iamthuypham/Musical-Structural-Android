@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Musify - Landing Screen</string>
+    <string name="landingscreen_description">Landing Screen of the Musify app. User can click on Trending Now button to view list of songs.</string>
+    <string name="playingactivity_label">Playing Activity</string>
+    <string name="playingactivity_description">Playing Activity displays a single song and a player control.</string>
+    <string name="purchaseactivity_label">Purchase Activity</string>
+    <string name="purchaseactivity_description">Purchase Activity displays a total price and a payment form.</string>
+    <string name="successactivity_label">Success Activity</string>
+    <string name="successactivity_description">Success Activity displays a message after users successful submit payment information.</string>
+    <string name="trendingactivity_label">Trending Activity</string>
+    <string name="trendingactivity_description">Trending Activity displays all songs on trending. Please click on first song below to view single song.</string>
+    <string name="appDescription">Music For Every Moment</string>
+    <string name="trendingNow">Trending Now</string>
+    <string name="top10Label">Top 10 This Month</string>
+    <string name="artistLabel">Artist</string>
+    <string name="albumLabel">Album</string>
+    <string name="buy">Buy</string>
+    <string name="songTitle">Lạc Trôi</string>
+    <string name="songArtist">Phương Trần</string>
+    <string name="albumName">Summer</string>
+    <string name="imageDescription">Song Cover Image</string>
+    <string name="follow">follow</string>
+    <string name="total">Total:</string>
+    <string name="price">$1.99</string>
+    <string name="paymentForm">Make Your Payment</string>
+    <string name="cardNumber">Card Number:</string>
+    <string name="date">Expiration Date: </string>
+    <string name="cvv">CVV:</string>
+    <string name="submit">Submit</string>
+    <string name="thankyou_message">Thank you for your purchase.</string>
+    <string name="home_button">Home</string>
+    <string name="api_explanation">Stripe API: 1)Store user input to variables 2)Validate input value 3)Pass input value to exchange for a token</string>
+</resources>

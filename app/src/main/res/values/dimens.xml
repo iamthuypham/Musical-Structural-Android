@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Height of each list item -->
+    <dimen name="padding_button">10dp</dimen>
+    <dimen name="icon">50dp</dimen>
+    <dimen name="marginTop">30dp</dimen>
+    <dimen name="marginTopFromDescription">10dp</dimen>
+    <dimen name="padding_left_layout">10dp</dimen>
+    <dimen name="padding_right_layout">10dp</dimen>
+    <dimen name="padding_top_layout">30dp</dimen>
+    <dimen name="padding_side_label">20dp</dimen>
+    <dimen name="margin_side_song">5dp</dimen>
+    <dimen name="height_musicbar">2dp</dimen>
+    <dimen name="height_musiccontrol">80dp</dimen>
+</resources>

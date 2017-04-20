@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:background="@color/colorPrimaryDark"
+    tools:context="collectdesigns.musical_structure.PurchaseActivity">
+
+    <android.support.constraint.ConstraintLayout
+        style="@style/Layout">
+
+        <TextView
+            android:id="@+id/purchase_activity_label"
+            android:text="@string/purchaseactivity_label"
+            style="@style/ActivityStyle"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/marginTop"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/purchase_activity_description"
+            style="@style/ActivityStyle"
+            android:text="@string/purchaseactivity_description"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/purchase_activity_label"
+            />
+
+        <TextView
+            android:id="@+id/api_explanation"
+            style="@style/ActivityStyle"
+            android:text="@string/api_explanation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/purchase_activity_description"
+            />
+
+
+        <TextView
+            android:id="@+id/totalLabel"
+            android:text="@string/total"
+            style="@style/Label"
+            android:textColor="@color/colorPuchase"
+            android:layout_marginTop="@dimen/marginTop"
+            app:layout_constraintTop_toBottomOf="@+id/api_explanation"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/total"
+            android:text="@string/price"
+            style="@style/Label"
+            android:textColor="@color/colorPuchase"
+            android:layout_marginTop="@dimen/marginTop"
+            app:layout_constraintTop_toBottomOf="@+id/api_explanation"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/paymentFormTitle"
+            android:text="@string/paymentForm"
+            style="@style/Label"
+            app:layout_constraintTop_toBottomOf="@+id/total"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/cardNumberLabel"
+            android:text="@string/cardNumber"
+            style="@style/Label"
+            app:layout_constraintTop_toBottomOf="@+id/paymentFormTitle"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <EditText
+            android:id="@+id/cardNumber"
+            style="@style/AppTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBorderButton"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/cardNumberLabel"/>
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:text="@string/date"
+            style="@style/Label"
+            app:layout_constraintTop_toBottomOf="@+id/cardNumber"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <EditText
+            android:id="@+id/date"
+            style="@style/AppTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBorderButton"
+            android:inputType="date"
+            app:layout_constraintTop_toBottomOf="@+id/dateLabel"/>
+
+        <TextView
+            android:id="@+id/cvvLabel"
+            android:text="@string/cvv"
+            style="@style/Label"
+            app:layout_constraintTop_toBottomOf="@+id/date"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <EditText
+            android:id="@+id/cvv"
+            style="@style/AppTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBorderButton"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/cvvLabel"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textColor="@color/colorBorderButton"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintTop_toBottomOf="@+id/cvv"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
